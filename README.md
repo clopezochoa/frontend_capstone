@@ -20,7 +20,7 @@ This project is a web application for scheduling medical appointments. It was bu
 
 ## Installation
 
-1. Clone the repository: `git clone [https://github.com/your-username/medical-appointment-web-app.git](https://github.com/clopezochoa/frontend_capstone.git)`
+1. Clone the repository: `git clone https://github.com/your-username/medical-appointment-web-app.git`
 2. Install the dependencies: `npm install` or `yarn install`
 3. Start the development server: `npm start` or `yarn start`
 
