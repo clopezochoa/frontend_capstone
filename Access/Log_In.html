@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" href="./Sign_Up.css">
+    <title>Log In Form</title>
+    <link rel="stylesheet" href="./Access.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
     
     <!-- Fetch assets from the CDN -->
@@ -13,35 +13,16 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body style="background-color: black;">
-    <div class="signup-container">
-      <h1 class="signup-header">Sign Up</h1>
-      <div class="login-suggestion">
-          Already a member? <a href="#" class="link"> Login</a>
+    <div class="custom-container">
+      <h1 class="custom-header">Login</h1>
+      <div class="custom-suggestion">
+        Are you a new member? <a href="#" class="link"> Login</a>
       </div>
-      <div class="signup-form">
+      <div class="custom-form">
         <form>
-          <div class="form-group">
-            <label for="role">Role</label>
-            <select id = "role" required class="form-select" aria-label="Default select example">
-              <option selected value="">Select your role</option>
-              <option value="1">Patient</option>
-              <option value="2">Doctor</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required class="form-control" placeholder="Enter your name" aria-describedby="helpId" autocomplete="name" />
-          </div>
-
-          <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" name="phone" id="phone" required class="form-control" placeholder="Enter your phone number" aria-describedby="helpId" autocomplete="tel" onblur="validate_phone(this)" onchange="validate_phone(this)" onclick="reset_field(this)" />
-          </div>
-
           <div class="form-group">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" required class="form-control" style="outline: none;" placeholder="Enter your email" aria-describedby="helpId" autocomplete="email" />
@@ -57,12 +38,16 @@
               </div>
           </div>
           
-          <div class="signup-button-group">
-              <button type="submit" class="signup-buttons form-button-main">Submit</button>
-              <button type="reset" class="signup-buttons form-button-secondary">Reset</button>
+          <div class="custom-button-group">
+              <button type="submit" class="custom-buttons form-button-main">Login</button>
+              <button type="reset" class="custom-buttons form-button-secondary">Reset</button>
           </div>
         </form>
       </div>
+      <div class="custom-suggestion">
+        Forgot password? <a href="#" class="link"> Request new password</a>
+      </div>
+      <div id="login-final-gap"></div>
     </div>
     <script src="../scripts/input_validation.js"></script>
     <script src="../scripts/password_toggle.js"></script>

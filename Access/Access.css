@@ -1,6 +1,6 @@
-.signup-container {
+.custom-container {
   max-width: 460px;
-  height: 890px;
+  max-height: 890px;
   min-width: 360px;
   flex-shrink: 0;
   border-radius: 32px;
@@ -13,15 +13,15 @@
   line-height: normal;
 }
 
-.signup-container a,
-.signup-container a:hover,
-.signup-container a:active,
-.signup-container a:focus {
+.custom-container a,
+.custom-container a:hover,
+.custom-container a:active,
+.custom-container a:focus {
   text-decoration: none;
   color: inherit;  
 }
 
-.signup-header {
+.custom-header {
   font-size: 32px;
   font-weight: 700;
   line-height: 127.2%;
@@ -31,16 +31,16 @@
   margin: 0;
 }
 
-.login-suggestion {
+.custom-suggestion {
   font-weight: 400;
 }
 
-.login-suggestion .link {
+.custom-suggestion .link {
   color: #57CBEF;
   font-weight: 700;
 }
 
-.signup-form {
+.custom-form {
   padding-left: 36px;
   padding-right: 36px;
   padding-top: 41px;
@@ -80,11 +80,11 @@
   background: #ffb5b5;
 }
 
-.signup-button-group {
+.custom-button-group {
   padding-top: 52px;
 }
 
-.signup-buttons {
+.custom-buttons {
   border-radius: 6px;
   border: 0px;
   height: 40px;
@@ -124,12 +124,20 @@
   padding: 0;
 }
 
+#signup-final-gap {
+  height: 102px;
+}
+
+#login-final-gap {
+  height: 63px;
+}
+
 @media (max-width: 640px) {
-  .signup-buttons {
+  .custom-buttons {
     min-width: 285px;
     width: 100%;
   }
-  .signup-container {
+  .custom-container {
     border-radius: 0;
     width: 100%;
     max-width: 640px;
@@ -137,7 +145,7 @@
 }
 
 @media (min-width: 641px) {
-  .signup-buttons {
+  .custom-buttons {
     width: 388px;
   }
 }
